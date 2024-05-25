@@ -1,0 +1,9 @@
+.food-display {
+  margin: 20px 0;
+}
+.food-display-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 30px;
+  padding: 20px;
+}

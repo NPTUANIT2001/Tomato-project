@@ -1,0 +1,23 @@
+.navbar {
+  padding: 48px 0;
+}
+
+.sign-in {
+  width: auto !important;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand p {
+  font-size: var(--header-3);
+  margin: auto;
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--primary);
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary) !important;
+}
+img {
+  color: red;
+}

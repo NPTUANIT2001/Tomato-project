@@ -1,0 +1,11 @@
+.modal-container {
+  border: 1px solid gray;
+  margin-top: 50px;
+}
+.khung {
+  padding: 40px;
+}
+.subbmit {
+  display: flex;
+  justify-content: center;
+}
