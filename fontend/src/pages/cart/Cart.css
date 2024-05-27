@@ -93,3 +93,10 @@
 .cart-total-details .cart-total-details-value {
   font-weight: var(--font-weight-semi-bold);
 }
+
+@media (max-width: 900px) {
+  .cart-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

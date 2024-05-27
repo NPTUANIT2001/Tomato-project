@@ -12,12 +12,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
-  max-width: 50%;
+
   bottom: 10%;
   left: 6vw;
 }
 .bg-content h2 {
-  font-size: var(--header-2);
+  /* font-size: var(--header-2); */
   color: var(--white);
   font-weight: var(--font-weight-medium);
 }
@@ -89,7 +89,15 @@
   border: 1px solid var(--primary);
   padding: 2px;
 }
-@media (max-width: 1050px) {
+@media (min-width: 1201) {
+  .bg-content h2 {
+    font-size: var(--header-2);
+  }
+  .bg-content {
+    max-width: 50%;
+  }
+}
+@media (min-width: 991) and (max-width: 1200) {
   .bg-content {
     max-width: 65%;
   }
@@ -101,6 +109,11 @@
   }
   .bg-content button {
     padding: 2vw 4vw;
+  }
+}
+@media (min-width: 751px) and (max-width: 1200) {
+  .bg-content {
+    max-width: 65%;
   }
 }
 @media (max-width: 750px) {
