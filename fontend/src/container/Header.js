@@ -1,12 +1,12 @@
 import { useDispatch } from "react-redux";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { logout } from "../store/reducers/auth";
 import Logo from "../assest/img/brand/growup-logo.svg";
 import "./header.css";
 import { assets } from "../assest/assets/assets";
 const Header = () => {
   const dispatch = useDispatch();
-
+  const navigate = useNavigate();
   const handleLogout = (e) => {
     e.preventDefault();
     dispatch(logout());
@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <div className="container">
-          <div className="navbar-brand">
+          <div className="navbar-brand" onClick={() => navigate("/home")}>
             <img src={Logo} alt="" />
             <p className="name-company">Tomato</p>
           </div>
@@ -38,6 +38,11 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link" to="/overview">
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/product">
                   Product
                 </NavLink>
@@ -56,7 +61,7 @@ const Header = () => {
               </li>
             </ul>
 
-            <form className="d-flex" onSubmit={handleLogout}>
+            <form className="d-flex form-sign-in" onSubmit={handleLogout}>
               <button
                 type="submit"
                 className="btn1 btn-primary shadow-none sign-in"

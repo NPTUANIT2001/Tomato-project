@@ -7,3 +7,15 @@
   gap: 30px;
   padding: 20px;
 }
+@media (max-width: 750px) {
+  .food-display-list {
+    grid-template-columns: 100%;
+  }
+}
+@media (min-width: 751px) and (max-width: 900px) {
+  .food-display-list {
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+  }
+}
+ 

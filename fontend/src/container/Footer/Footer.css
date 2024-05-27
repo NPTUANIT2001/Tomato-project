@@ -47,3 +47,9 @@
   margin: 20px 0px;
   color: var(--white);
 }
+@media (max-width: 750px) {
+  .footer-content-center,
+  .footer-content-right {
+    display: none;
+  }
+}

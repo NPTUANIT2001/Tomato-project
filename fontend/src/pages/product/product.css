@@ -1,9 +1,10 @@
 /* bgtomato */
 .bg-tomato {
-  height: 34vw;
+  height: 30vw;
   margin: 30px auto;
   background: url("../../assest/assets/header_img.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 .bg-content {
@@ -87,4 +88,32 @@
 .explore-menu-list-item .active {
   border: 1px solid var(--primary);
   padding: 2px;
+}
+@media (max-width: 1050px) {
+  .bg-content {
+    max-width: 65%;
+  }
+  .bg-content h2 {
+    font-size: var(--header-4);
+  }
+  .bg-content p {
+    display: none;
+  }
+  .bg-content button {
+    padding: 2vw 4vw;
+  }
+}
+@media (max-width: 750px) {
+  .bg-content {
+    max-width: 65%;
+  }
+  .bg-content h2 {
+    font-size: var(--header-4);
+  }
+  .bg-content p {
+    display: none;
+  }
+  .bg-content button {
+    padding: 2vw 4vw;
+  }
 }

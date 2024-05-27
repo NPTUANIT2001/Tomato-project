@@ -7,13 +7,18 @@
   align-items: center;
   color: gray;
   font-size: var(--text-medium);
+  text-align: center;
 }
 .cart-items-item {
   margin: 10px 0px;
   color: black;
 }
+.cart-items-item p {
+  margin: auto;
+}
 .cart-items-item img {
   width: 50px;
+  margin: auto;
 }
 .cart-items-item .cross {
   cursor: pointer;

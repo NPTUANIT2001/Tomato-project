@@ -74,7 +74,7 @@ const Major = () => {
                         <td>
                           <a
                             onClick={(e) => showEditPage(e, major.id)}
-                            className="me-1"
+                            className="me-1" 
                           >
                             <i className="bi-pencil-square text-primary" />
                           </a>

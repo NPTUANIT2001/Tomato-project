@@ -41,7 +41,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="col-md-6 "
+              className="col-md-6 hero-picture "
               data-aos="fade-up"
               data-aos-duration={3000}
             >
@@ -53,7 +53,7 @@ const Home = () => {
       <section className="testimonl-brand">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 mt-5 mb-5 text-center">
+            <div className="col-md-12 mt-5 mb-5 text-center picture-brand">
               <img src={Brand} alt="brand" />
             </div>
           </div>

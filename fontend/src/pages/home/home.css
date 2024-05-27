@@ -67,7 +67,9 @@ section.hero {
 .testimoni-brand {
   padding: 24px 0;
 }
-
+.picture-brand img {
+  width: 100%;
+}
 /* reponsive */
 @media (min-width: 1399.99px) {
   .container {
@@ -75,5 +77,47 @@ section.hero {
   }
   .testimoni-brand {
     padding: 4rem 5rem;
+  }
+}
+@media (max-width: 1050px) {
+  section.hero {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+  }
+  .hero-picture {
+    margin-top: 30px !important;
+  }
+  .hero-picture img {
+    width: 100%;
+  }
+  .text-hero-bold {
+    font-size: var(--header-4);
+  }
+  .section.hero {
+    margin: 2rem 0;
+  }
+  .bnt1 {
+    padding: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  section.hero {
+    margin: 1rem 0;
+    margin-bottom: 3rem;
+  }
+  .testimonl-brand {
+    display: none;
+  }
+  .hero-picture img {
+    width: 80%;
+  }
+  .text-hero-bold {
+    font-size: var(--header-4);
+  }
+  .section.hero {
+    margin: 2rem 0;
+  }
+  .bnt1 {
+    padding: 1rem;
   }
 }
